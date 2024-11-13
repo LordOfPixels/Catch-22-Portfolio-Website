@@ -1,0 +1,165 @@
+:root {
+  --accent: #c2f970;
+  --dark: #44344f;
+  --mid: #564d80;
+  --light: #98a6d4;
+  --accentlight: #d3fcd5;
+}
+
+@keyframes spin {
+  0%   {transform:rotate(0deg);}
+  100% {transform:rotate(180deg);}
+}
+
+body {
+	font-family:arial;
+	background-color:var(--dark);
+	letter-spacing:2px;
+	color:var(--accentlight);
+	text-align:center;
+	width:100%;
+	margin:auto;
+}
+.titlecontainer{
+	display:flex;
+	margin:auto;
+	margin-top:30px;
+	width:80%;
+	max-width:1000px;
+	max-height:600px;
+	height:70%;
+}
+.titlebox{
+	background-color:var(--mid);
+	margin:auto;
+	width:100%;
+	height:100%;
+	box-shadow: 0 0 20px #00000070;
+}
+.navbar{
+	display:flex;
+	position:relative;
+	background-color:var(--light);
+	margin:auto;
+	width:90%;
+	max-width:1200px;
+	height:10%;
+	z-index:10;
+}
+.navbutton{
+	width:25%;
+	margin:auto;
+	height:100%;
+	background-color:#00000000;
+	border:none;
+	position:relative;
+}
+.navbutton div.animbox1{
+	border:solid;
+	border-color:#00000000;
+	border-width:.5px;
+	position:absolute;
+	width:7%;
+	height:24%;
+	transition:0.2s;
+	top:200%;
+	left:44%;
+}
+.navbutton:hover div.animbox1{
+	border:solid;
+	border-width:1pt;
+	border-color:white;
+	width:38%;
+	height:120%;
+	transition:0.5s;
+	left:30%;
+	top:-10%;
+	animation-name:spin;
+	animation-duration:3s;
+	animation-iteration-count:infinite;
+}
+.navbutton div.animbox2{
+	border:solid;
+	border-color:#00000000;
+	border-width:.5px;
+	position:absolute;
+	width:7%;
+	height:24%;
+	transition:0.2s;
+	transition-delay:0.02s;
+	top:200%;
+	left:44%;
+}
+.navbutton:hover div.animbox2{
+	border:solid;
+	border-width:1pt;
+	border-color:var(--accentlight);
+	width:38%;
+	height:120%;
+	transition:0.5s;
+	transition-delay:0.05s;
+	left:30%;
+	top:-10%;
+	animation-name:spin;
+	animation-duration:3s;
+	animation-delay:0.1s;
+	animation-iteration-count:infinite;
+}
+.navbutton div.animbox3{
+	border:solid;
+	border-color:#00000000;
+	border-width:.5px;
+	position:absolute;
+	width:7%;
+	height:24%;
+	transition:0.2s;
+	transition-delay:0.04s;
+	top:200%;
+	left:44%;
+}
+.navbutton:hover div.animbox3{
+	border:solid;
+	border-width:1pt;
+	border-color:var(--accent);
+	width:38%;
+	height:120%;
+	transition:0.5s;
+	transition-delay:0.1s;
+	left:30%;
+	top:-10%;
+	animation-name:spin;
+	animation-duration:3s;
+	animation-delay:0.2s;
+	animation-iteration-count:infinite;
+}
+.navanimcontainer{
+	width:100%;
+	height:100%;
+	margin:auto;
+	background-color:ff00ff;
+}
+.navbuttontext{
+	color:var(--dark);
+	align-items:center;
+}
+.navspacer{
+	border-style:solid;
+	border-width:1px;
+	border-color:var(--accent);
+	margin:1% 0;
+}
+.navshadow{
+	top:14%;
+	display:flex;
+	position:absolute;
+	background-color:#00000066;
+	margin:auto;
+	width:100%;
+	height:72%;
+	z-index:9;
+}
+.navcontainer{
+	position:sticky;
+	top:20px;
+	width:100%;
+}
