@@ -11,8 +11,21 @@
   100% {transform:rotate(180deg);}
 }
 
+@font-face{
+	font-family:"LanderBold";
+	src:url("./assets/fonts/Lander Bold.woff");
+}
+
+@font-face {
+	font-family:"Lander";
+	src:url("./assets/fonts/Lander.woff");
+}
+
 body {
-	font-family:arial;
+	font-family: "Lander", Courier, monospace;
+	background-image:url("./assets/background.png");
+	background-repeat:repeat-x;
+	background-size:100%;
 	background-color:var(--dark);
 	letter-spacing:2px;
 	color:var(--accentlight);
@@ -59,11 +72,11 @@ body {
 	border-color:#00000000;
 	border-width:.5px;
 	position:absolute;
-	width:7%;
-	height:24%;
+	width:0;
+	height:0;
 	transition:0.2s;
 	top:200%;
-	left:44%;
+	left:50%;
 }
 .navbutton:hover div.animbox1{
 	border:solid;
@@ -83,12 +96,12 @@ body {
 	border-color:#00000000;
 	border-width:.5px;
 	position:absolute;
-	width:7%;
-	height:24%;
+	width:0;
+	height:0;
 	transition:0.2s;
 	transition-delay:0.02s;
 	top:200%;
-	left:44%;
+	left:50%;
 }
 .navbutton:hover div.animbox2{
 	border:solid;
@@ -110,12 +123,12 @@ body {
 	border-color:#00000000;
 	border-width:.5px;
 	position:absolute;
-	width:7%;
-	height:24%;
+	width:0;
+	height:0;
 	transition:0.2s;
 	transition-delay:0.04s;
 	top:200%;
-	left:44%;
+	left:50%;
 }
 .navbutton:hover div.animbox3{
 	border:solid;
@@ -139,6 +152,7 @@ body {
 	background-color:ff00ff;
 }
 .navbuttontext{
+	font-family: "LanderBold", Courier, monospace;
 	color:var(--dark);
 	align-items:center;
 }

@@ -1,0 +1,37 @@
+.contentcontainer{
+	display:flex;
+	margin:auto;
+	width:80%;
+	max-width:1000px;
+	max-height:600px;
+	height:70%;
+}
+.contentbox{
+	background-color:var(--mid);
+	margin:auto;
+	width:100%;
+	height:200%;
+	box-shadow: 0 0 20px #00000070;
+}
+.imagetable{
+	display:flex;
+	flex-wrap:wrap;
+	margin:auto;
+	margin-top:40px;
+	width:90%;
+	background-color:#00ff00;
+}
+.imagecontainer{
+	width:30%;
+	min-width:200px;
+	aspect-ratio:1/1;
+	float:left;
+	margin:auto;
+	margin-bottom:20px;
+	object-fit:cover;
+}
+.imagetest{
+	background-color:#ff0000;
+	width:100%;
+	height:100%;
+}
